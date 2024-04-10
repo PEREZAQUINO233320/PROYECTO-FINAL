@@ -21,4 +21,13 @@ public class Login {
     public void setContrasena(int contrasena) {
         this.contrasena = contrasena;
     }
+
+    public boolean validarUsuario(ListaUsuario user){
+        for (Usuario i:user.getListaUsuario()){
+            if(this.usuario.equals(i.getUsuario()) && this.contrasena==i.getContrasena()){
+                return true;
+            }
+        }
+        return false;
+    }
 }
