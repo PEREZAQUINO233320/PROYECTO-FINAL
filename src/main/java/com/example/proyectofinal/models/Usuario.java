@@ -12,6 +12,19 @@ public class Usuario {
         return nombre;
     }
 
+    public Usuario (){
+
+    }
+
+    public Usuario(String nombre, String apellido, long numeroTel, String tipo, String usuario, int contrasena) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.numeroTel = numeroTel;
+        this.tipo = tipo;
+        this.usuario = usuario;
+        this.contrasena = contrasena;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
