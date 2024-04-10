@@ -10,17 +10,20 @@ public class Producto {
     private String marca;
     private String contenidoNeto;
 
+    private int cantidad;
+
     public Producto(){
 
     }
 
-    public Producto(String nombre, LocalDate caducidad, float precio, long id, String marca, String contenidoNeto) {
+    public Producto(String nombre, LocalDate caducidad, float precio, long id, String marca, String contenidoNeto, int cantidad) {
         this.nombre = nombre;
         this.caducidad = caducidad;
         this.precio = precio;
         this.id = id;
         this.marca = marca;
         this.contenidoNeto = contenidoNeto;
+        this.cantidad=cantidad;
     }
 
     public String getNombre() {
@@ -69,5 +72,13 @@ public class Producto {
 
     public void setContenidoNeto(String contenidoNeto) {
         this.contenidoNeto = contenidoNeto;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 }
