@@ -6,7 +6,7 @@ public class Producto {
     private String nombre;
     private LocalDate caducidad;
     private float precio;
-    private long id;
+    private int id;
     private String marca;
     private String contenidoNeto;
 
@@ -16,7 +16,7 @@ public class Producto {
 
     }
 
-    public Producto(String nombre, LocalDate caducidad, float precio, long id, String marca, String contenidoNeto, int cantidad) {
+    public Producto(String nombre, LocalDate caducidad, float precio, int id, String marca, String contenidoNeto, int cantidad) {
         this.nombre = nombre;
         this.caducidad = caducidad;
         this.precio = precio;
@@ -50,11 +50,11 @@ public class Producto {
         this.precio = precio;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

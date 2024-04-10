@@ -6,12 +6,10 @@ public class ProductoConsumoOral extends Producto{
     private String categoria;
     private String sabor;
 
-    public ProductoConsumoOral(){
 
-    }
 
-    public ProductoConsumoOral(String nombre, LocalDate caducidad, float precio, long id, String marca, String contenidoNeto, String categoria, String sabor) {
-        super(nombre, caducidad, precio, id, marca, contenidoNeto);
+    public ProductoConsumoOral(String nombre, LocalDate caducidad, float precio, int id, String marca, String contenidoNeto, int cantidad, String categoria, String sabor) {
+        super(nombre, caducidad, precio, id, marca, contenidoNeto, cantidad);
         this.categoria = categoria;
         this.sabor = sabor;
     }

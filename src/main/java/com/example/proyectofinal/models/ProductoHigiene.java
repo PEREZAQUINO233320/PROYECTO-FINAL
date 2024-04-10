@@ -9,8 +9,8 @@ public class ProductoHigiene extends Producto{
 
     }
 
-    public ProductoHigiene(String nombre, LocalDate caducidad, float precio, long id, String marca, String contenidoNeto, String tipo) {
-        super(nombre, caducidad, precio, id, marca, contenidoNeto);
+    public ProductoHigiene(String nombre, LocalDate caducidad, float precio, int id, String marca, String contenidoNeto, int cantidad, String tipo) {
+        super(nombre, caducidad, precio, id, marca, contenidoNeto, cantidad);
         this.tipo = tipo;
     }
 

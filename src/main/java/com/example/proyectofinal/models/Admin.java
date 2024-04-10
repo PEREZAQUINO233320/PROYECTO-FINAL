@@ -7,7 +7,7 @@ public class Admin extends Usuario {
 
     }
 
-    public Admin(String nombre, String apellido, long numeroTel, String tipo, String usuario, int contrasena, String correo) {
+    public Admin(String nombre, String apellido, String numeroTel, String tipo, String usuario, int contrasena, String correo) {
         super(nombre, apellido, numeroTel, tipo, usuario, contrasena);
         this.correo = correo;
     }

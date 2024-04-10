@@ -3,7 +3,7 @@ package com.example.proyectofinal.models;
 public class Usuario {
     private String nombre;
     private String apellido;
-    private long numeroTel;
+    private String numeroTel;
     private String tipo;
     private String usuario;
     private int contrasena;
@@ -12,7 +12,7 @@ public class Usuario {
 
     }
 
-    public Usuario(String nombre, String apellido, long numeroTel, String tipo, String usuario, int contrasena) {
+    public Usuario(String nombre, String apellido, String numeroTel, String tipo, String usuario, int contrasena) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.numeroTel = numeroTel;
@@ -37,11 +37,11 @@ public class Usuario {
         this.apellido = apellido;
     }
 
-    public long getNumeroTel() {
+    public String getNumeroTel() {
         return numeroTel;
     }
 
-    public void setNumeroTel(long numeroTel) {
+    public void setNumeroTel(String numeroTel) {
         this.numeroTel = numeroTel;
     }
 

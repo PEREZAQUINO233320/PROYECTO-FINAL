@@ -9,8 +9,8 @@ public class ProductoMedicamento extends Producto {
     public ProductoMedicamento() {
     }
 
-    public ProductoMedicamento(String nombre, LocalDate caducidad, float precio, long id, String marca, String contenidoNeto, String unidadGramo, String laboratorio) {
-        super(nombre, caducidad, precio, id, marca, contenidoNeto);
+    public ProductoMedicamento(String nombre, LocalDate caducidad, float precio, int id, String marca, String contenidoNeto, int cantidad, String unidadGramo, String laboratorio) {
+        super(nombre, caducidad, precio, id, marca, contenidoNeto, cantidad);
         this.unidadGramo = unidadGramo;
         this.laboratorio = laboratorio;
     }
